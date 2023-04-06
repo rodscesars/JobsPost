@@ -6,6 +6,11 @@ import JobForm from './components/JobForm'
 import JobEdit from './components/JobEdit'
 import NavBar from './components/NavBar';
 import CompanyDetail from './components/CompanyDetail';
+import CompanyBoard from './components/CompanyBoard';
+import CompanyForm from './components/CompanyForm'
+import CompanyEdit from './components/CompanyEdit'
+
+
 
 export default function App() {
   return (
@@ -24,6 +29,21 @@ export default function App() {
           />
           <Route exact path="/jobs/new"
             element={<JobForm />}
+          />
+          <Route path="/companies/:companyId"
+            element={<CompanyDetail />}
+          />
+          <Route exact path="/companies"
+            element={<CompanyBoard />}
+          />
+          <Route path="/companies/:companyId"
+            element={<CompanyDetail />}
+          />
+          <Route path="/companies/:companyId/edit"
+            element={<CompanyEdit />}
+          />
+          <Route exact path="/companies/new"
+            element={<CompanyForm />}
           />
           <Route path="/companies/:companyId"
             element={<CompanyDetail />}

@@ -6,10 +6,16 @@ function NavBar() {
     <nav className="navbar">
       <div className="navbar-start">
         <Link className="navbar-item" to="/">
-          Home
+          Jobs
+        </Link>
+        <Link className="navbar-item" to="/companies">
+          Empresas
         </Link>
         <Link className="navbar-item" to="/jobs/new">
           Criar Job
+        </Link>
+        <Link className="navbar-item" to="/companies/new">
+          Criar empresa
         </Link>
       </div>
     </nav>
