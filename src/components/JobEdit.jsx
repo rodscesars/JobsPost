@@ -37,7 +37,7 @@ function JobEdit() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     await updateJob()
-    navigate(`/jobs/${job.objectId}`)
+    navigate(`/companies/${job.objectId}`)
   };
 
   useEffect(() => {

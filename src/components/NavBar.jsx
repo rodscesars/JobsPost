@@ -15,7 +15,7 @@ function NavBar() {
           Criar Job
         </Link>
         <Link className="navbar-item" to="/companies/new">
-          Criar empresa
+          Criar Empresa
         </Link>
       </div>
     </nav>
